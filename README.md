@@ -1,2 +1,17 @@
-# fastapi_authentication
- A straightforward implementation of OAuth2 authentication for FastAPI.
+# Fastapi Authentication
+This module provides a straightforward implementation of OAuth2 authentication for your FastAPI application, utilizing MongoDB for user authentication and employing tokens for endpoint access.
+
+You may choose to utilize either a .env file as demonstrated in the example or opt for a Docker Compose file, wherein you can specify the environment variables directly within that file.
+
+```text
+MONGO_USER_USERNAME=username
+MONGO_USER_PASSWORD=password
+MONGO_USER_HOST=localhost
+MONGO_USER_PORT=27017
+MONGO_USER_DBNAME=authentication
+MONGO_USER_COLLECTION=users
+```
+
+This is a simple example on how you can use this module.
+```python
+```
