@@ -12,7 +12,8 @@ MONGO_USER_DBNAME=authentication
 MONGO_USER_COLLECTION=users
 ```
 
-This is a simple example on how you can use this module.
+This is a simple example on how you can use this module.  
+The current_user arg is the authenticated user schema which is stored in schemas.py .
 ```python
 from fastapi_authentication import User, get_current_active_user
 
