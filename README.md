@@ -14,4 +14,13 @@ MONGO_USER_COLLECTION=users
 
 This is a simple example on how you can use this module.
 ```python
+from fastapi_authentication import User, get_current_active_user
+
+
+@router.get("/my_endpoint", tags=["MyCustomModule"])
+async def my_endpoint(current_user: User = Depends(get_current_active_user)):
+    """
+    Docstring for OpenAPI documentation ...
+    """
+    return "This is awesome!"
 ```
