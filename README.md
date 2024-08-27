@@ -25,3 +25,12 @@ async def my_endpoint(current_user: User = Depends(get_current_active_user)):
     """
     return "This is awesome!"
 ```
+
+In order to add users to the database you can use the compass app.  
+This is how you can generate hashed passwords
+
+```python
+from fastapi_authentication import get_password_hash
+
+hashed_password = get_password_hash(plain_text_password)
+```
